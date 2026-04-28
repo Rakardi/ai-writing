@@ -138,6 +138,8 @@ One of the most common questions a new AI-assisted writer asks is: *"For this ta
 
 Return to **Data Handling in Practice: What to Paste, What Not to Paste**. If the input is Confidential or Restricted, tool choice is constrained by what your organization has approved — not by what would be technically ideal. Policy beats preference.
 
-> 💡 **Rule of thumb:** Match the tool to the task's *shape*, *stakes*, and *sensitivity*. If you're choosing a tool for reasons other than those three, you're probably choosing it because it's familiar, not because it's right.
+!!! tip "Rule of thumb"
+
+    Match the tool to the task's *shape*, *stakes*, and *sensitivity*. If you're choosing a tool for reasons other than those three, you're probably choosing it because it's familiar, not because it's right.
 
 ---
