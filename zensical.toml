@@ -81,10 +81,13 @@ nav = [
 # Section for configuring theme options
 # ----------------------------------------------------------------------------
 [project.theme]
+<<<<<<< HEAD
 features = [
     "navigation.instant",
     "navigation.path"
 ]
+=======
+>>>>>>> parent of e2042c9 (Add instant navigation feature to project theme)
 
 # change this to "classic" to use the traditional Material for MkDocs look.
 #variant = "classic"
