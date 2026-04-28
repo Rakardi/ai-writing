@@ -13,31 +13,37 @@ By the end of this module, you'll be able to:
 
 ## Key Concepts
 
-*Click the arrows to navigate through the items below.*
-
 ### Artificial Intelligence
 
 Artificial Intelligence (AI) mimics human intelligence in complex processes such as learning, reasoning, and self-correction. Tasks that can be automated or enhanced with AI include visual perception, speech recognition, decision-making, and translation. When used in technical communication, AI can help authors generate and review content, automate repetitive tasks, enhance user experience through intelligent bots, and streamline content management and workflow processes. Rather than replacing people, AI can take over mundane tasks, allowing technical writers to have more time for strategic, creative, and decision-making tasks.
 
-💡 *Think of AI as a very sophisticated mimic that has read everything ever written. It can imitate intelligence—sometimes brilliantly—without having experienced the world that produced all those words. That gap between imitation and understanding is where errors, hallucinations, and misjudgments enter the picture.*
+!!! tip ""
+
+    *Think of AI as a very sophisticated mimic that has read everything ever written. It can imitate intelligence—sometimes brilliantly—without having experienced the world that produced all those words. That gap between imitation and understanding is where errors, hallucinations, and misjudgments enter the picture.*
 
 ### Machine Learning
 
 Machine Learning (ML) is a core subset of AI. Its focus is on developing algorithms that enable computers to learn from data and make informed predictions or decisions autonomously. ML does not simply follow written instructions. Rather, it analyzes "training data", creates mathematical models, and then uses those to perform tasks with minimum to no human intervention. In the field of technical communication, ML can analyze user behaviour and feedback to improve the usability and relevance of technical documents. It can be trained to parse through, organize, structure, categorize, and find patterns in large amounts of technical information.
 
-💡 *Think of ML as a chef who has tasted thousands of dishes and gradually internalized the rules of flavor—not by being told "salt enhances sweetness," but by tasting enough dishes that the pattern revealed itself. The chef can now create new dishes by feel, without being able to articulate every rule they follow. Impressively capable; not infallible.*
+!!! tip ""
+
+    *Think of ML as a chef who has tasted thousands of dishes and gradually internalized the rules of flavor—not by being told "salt enhances sweetness," but by tasting enough dishes that the pattern revealed itself. The chef can now create new dishes by feel, without being able to articulate every rule they follow. Impressively capable; not infallible.*
 
 ### Natural Language Processing
 
 Natural Language Processing (NLP) has emerged as a product of computer science, AI, and linguistics. It provides algorithms that allow computers to emulate the human processes of processing and generating written and spoken communication. NLP is indispensable in language translation, sentiment analysis, and bots. In technical communication, NLP plays a vital role by transforming structured data inputs into intelligible human language. This enables tasks such as automatic content summarization and initial draft generation, enhancing the efficiency and scalability of technical writing processes.
 
-💡 *Think of NLP as a professional interpreter who doesn't just translate words but reads intent and adjusts for tone. Without NLP, AI would see the sentence "Can you open the window?" as a question about capability; NLP enables it to recognize that same sentence as a request.*
+!!! tip ""
+
+    *Think of NLP as a professional interpreter who doesn't just translate words but reads intent and adjusts for tone. Without NLP, AI would see the sentence "Can you open the window?" as a question about capability; NLP enables it to recognize that same sentence as a request.*
 
 ### Large Language Models
 
 Large Language Models (LLMs), such as ChatGPT and other generative pre-trained transformers, are advanced AI models dedicated to processing and generating intelligible human-like text. Extensive datasets comprising books, articles, websites, and other textual content are used to train LLMs so that they process context within their input window and generate statistically likely continuations. In the realm of technical communication, LLMs are to make a lasting impact. Creating initial drafts is just one application that easily springs to mind. More impressive, however, is their capability to refine content, add a personal touch to it based on iterative collaboration with the author. By adopting LLMs, technical writers can develop comprehensive documents driven by the target audience needs, and can do so faster than ever, without compromising the delivered quality. This enables technical writers to focus more on strategic tasks, elevating the role of human creativity and decision making in producing superior technical content.
 
-💡 *Think of an LLM as a remarkably well-read generalist who has internalized millions of documents. Ask them anything and they'll give you a fluent, plausible answer—but their knowledge has a cutoff date, they can confabulate with great confidence, and they work by predicting what words are likely to come next, not by "understanding" a topic the way you do.*
+!!! tip ""
+
+    *Think of an LLM as a remarkably well-read generalist who has internalized millions of documents. Ask them anything and they'll give you a fluent, plausible answer—but their knowledge has a cutoff date, they can confabulate with great confidence, and they work by predicting what words are likely to come next, not by "understanding" a topic the way you do.*
 
 > 💡 **Two terms worth a minute.**
 >
@@ -51,7 +57,9 @@ Retrieval-Augmented Generation (RAG) is a technique that enhances an LLM's outpu
 
 For technical writers, RAG is particularly useful for building internal documentation assistants: tools that answer user questions by drawing on your team's actual documentation, not on generic internet data.
 
-💡 *The difference between a standard LLM and a RAG-enabled system is the difference between asking a colleague to answer from memory versus asking them to look it up in the company documentation first, then answer. The lookup step grounds the response in your actual content.*
+!!! tip ""
+
+    *The difference between a standard LLM and a RAG-enabled system is the difference between asking a colleague to answer from memory versus asking them to look it up in the company documentation first, then answer. The lookup step grounds the response in your actual content.*
 
 #### RAG in Practice: What the Technical Writer Owns
 
@@ -72,7 +80,9 @@ Small Language Models (SLMs) are AI models that are significantly more compact t
 
 For technical writers, SLMs represent a practical option for high-volume, domain-specific tasks: checking adherence to a specific style guide, extracting terminology, or classifying documentation types. The trade-off is limited generality—a model tuned for software documentation will struggle if asked to write marketing copy.
 
-💡 *Think of an SLM as a specialist consultant versus a generalist. Less breadth; more depth. And considerably cheaper per consultation.*
+!!! tip ""
+
+    *Think of an SLM as a specialist consultant versus a generalist. Less breadth; more depth. And considerably cheaper per consultation.*
 
 ### Agentic AI
 
@@ -82,7 +92,9 @@ For technical writers, this matters because agents can handle the routine, repea
 
 The concept of agentic AI is explored in detail in **Agentic AI Workflows for Technical Writers**.
 
-💡 *Think of an agent as a project coordinator who takes your goal, breaks it into tasks, assigns each task to the right tool, checks on progress, handles exceptions, and reports back—without needing you to be present at every step. Powerful; but the coordinator still needs your oversight at key decision points.*
+!!! tip ""
+
+    *Think of an agent as a project coordinator who takes your goal, breaks it into tasks, assigns each task to the right tool, checks on progress, handles exceptions, and reports back—without needing you to be present at every step. Powerful; but the coordinator still needs your oversight at key decision points.*
 
 ---
 
