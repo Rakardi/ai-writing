@@ -191,6 +191,6 @@ The anti-pattern to name out loud: the two-hundred-prompt library that nobody ma
 
 > 💡 **Try this: the curated core.** Identify a small core set — roughly ten to twenty prompts — that covers your team's most common documentation moves: a release note, an API reference skeleton, a tutorial opening, a changelog summary, a style-guide-aligned revision pass. Treat the core as your onboarding kit. New team members start from the core; everything else is discoverable but optional. Promotion into the core is a real decision, made on the basis of real use — not a guess about what might be useful someday.
 
-A team prompt library is, in the end, a way of turning good individual practice into durable collective practice. The personal side of that — how each writer decides what to save, when to revise, and when to let a prompt go — is covered later in Building your own prompt library.
+A team prompt library is, in the end, a way of turning good individual practice into durable collective practice. The personal side of that — how each writer decides what to save, when to revise, and when to let a prompt go — is covered later in [Building your own prompt library](module6.md#building-your-own-prompt-library).
 
 ---
