@@ -136,5 +136,3 @@ AI-readiness includes telling whether AI is actually improving your work — or 
 - **Post-publication issues.** User-reported errors, support tickets traceable to documentation, broken examples. Lagging but unambiguous.
 
 A notebook, a shared spreadsheet, or a periodic team retrospective is enough — no dashboard required. The point is that without *any* measurement you are flying blind, and the shift from helping to costing can happen slowly enough that you won't notice without the instrument panel.
-
----
