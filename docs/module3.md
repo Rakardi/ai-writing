@@ -56,7 +56,9 @@ Models can be trained, or fine-tuned, to produce outputs users find agreeable ra
 **The fix in all three cases.**
 The mechanisms differ; the habit is the same. Verify claims against authoritative sources, especially for anything high-stakes. Validate *assumptions*, not just conclusions. And assume that newer or more expensive models have *different* failure modes, not zero failure modes — the sophistication of the tool changes the shape of its mistakes, not the fact of them.
 
-*Further reading:* Anthropic's research blog ([anthropic.com/research](https://www.anthropic.com/research)) and OpenAI's research pages ([openai.com/research](https://openai.com/research)) are the useful anchor points. For practitioner-level guidance, search for *"LLM hallucination mitigation"* and *"AI sycophancy"* — this field moves quickly, and recent practitioner posts are often more useful than older survey papers.
+!!! info "Further reading"
+
+    Anthropic's [research blog](https://www.anthropic.com/research) and OpenAI's [research papers](https://openai.com/research) are the useful anchor points. For practitioner-level guidance, search for *"LLM hallucination mitigation"* and *"AI sycophancy"* — this field moves quickly, and recent practitioner posts are often more useful than older survey papers.
 
 ### Mitigations that actually work
 
