@@ -2,7 +2,7 @@
 
 This course introduces Artificial Intelligence (AI) for technical communicators. It covers the key concepts and limitations of AI from the technical writer's perspective, and shows how AI supports the real work of documentation — research, organization, drafting, revision, and publication. Theory is kept short; practical examples carry most of the weight.
 
-!!! info
+!!! info " "
 
     Use AI platforms approved by your company or your project to explore different AI models. Before introducing AI into any workflow, confirm it is permitted under your project's AI policy and obtain appropriate permissions from stakeholders to avoid exposing sensitive data to external systems.
 
