@@ -1,7 +1,3 @@
----
-icon: simple/markdown
----
-
 # Foundations and Mindset
 
 This module covers the groundwork every later module assumes: policy, data safety, and the shifting shape of the technical writer's role.

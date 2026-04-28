@@ -1,7 +1,3 @@
----
-icon: lucide/rocket
----
-
 # About the Course
 
 This course introduces Artificial Intelligence (AI) for technical communicators. It covers the key concepts and limitations of AI from the technical writer's perspective, and shows how AI supports the real work of documentation — research, organization, drafting, revision, and publication. Theory is kept short; practical examples carry most of the weight.
