@@ -82,7 +82,8 @@ nav = [
 # ----------------------------------------------------------------------------
 [project.theme]
 features = [
-    "navigation.instant"
+    "navigation.instant",
+    "navigation.path"
 ]
 
 # change this to "classic" to use the traditional Material for MkDocs look.
