@@ -104,8 +104,9 @@ Assisted by AI, a technical writer can:
 - *Support creative problem-solving:* ask AI to propose innovative solutions for complex documentation challenges, such as visualizing abstract concepts or creating interactive user guides.
 - *Adapt to user feedback:* analyze user feedback through the LLM and incorporate its findings into documentation, continuously improving the relevance and usefulness of the content.
 
-!!! warning
-     **Word of caution.** While AI is a powerful tool that can augment the technical writer's capabilities, one must approach its output critically. Always check the accuracy and relevance of the information, as AI may not always discern the nuances of context or be aware of the latest industry developments. It is the writer's responsibility to validate the content, ensuring it adheres to the highest standards of veracity, completeness, and ethical practice.
+!!! warning "Word of caution"
+
+     While AI is a powerful tool that can augment the technical writer's capabilities, one must approach its output critically. Always check the accuracy and relevance of the information, as AI may not always discern the nuances of context or be aware of the latest industry developments. It is the writer's responsibility to validate the content, ensuring it adheres to the highest standards of veracity, completeness, and ethical practice.
 
 ### Key Skills for the AI Era
 
