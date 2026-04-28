@@ -35,6 +35,7 @@ You won't always need all six. A quick brainstorming prompt might use only Role 
     The identity or perspective you want the AI model to assume when generating its output. Assigning a role activates relevant patterns in the model's training and shapes tone, vocabulary, and level of rigor.
 
     !!! example
+    
         "You are a senior technical writer specializing in developer documentation for cloud platforms."
 
 !!! info "Task — State the action, precisely"
@@ -42,23 +43,40 @@ You won't always need all six. A quick brainstorming prompt might use only Role 
     The specific thing you want done, formulated as a concrete verb and deliverable. Vague tasks produce vague output; name both the action and the object.
 
     !!! example
+    
         "Rewrite the following installation steps for a first-time user who has never used the command line."
 
-**3. Context** — Supply the background the model can't infer.
-Supplementary information that guides the model toward more useful responses: audience, product, constraints, the situation the content will live in. Context is where hallucinations are most often prevented, because the model can only reason about what you tell it.
-*Example:* "This procedure will appear in the Quick Start section of our public docs. Readers are evaluating our product and may abandon the page if the first step fails."
+!!! info "Context — Supply the background the model can't infer"
 
-**4. Format** — Describe the output shape.
-The desired style, structure, or format of the response. Do you want prose? A numbered list? A table with specific columns? Markdown? JSON? Specify it.
-*Example:* "Return the result as a numbered list with each step under 20 words. Add a short 'Why this matters' note under steps 3 and 5."
+    Supplementary information that guides the model toward more useful responses: audience, product, constraints, the situation the content will live in. Context is where hallucinations are most often prevented, because the model can only reason about what you tell it.
+    
+    !!! example
+        
+        "This procedure will appear in the Quick Start section of our public docs. Readers are evaluating our product and may abandon the page if the first step fails."
 
-**5. Constraints** — Define the guardrails.
-Any limitations on the generated output — length, tone, forbidden terms, reading level, style guide rules, what the output must *not* do. Constraints are often what separate a generic response from one you can actually use.
-*Example:* "Avoid marketing language. Do not invent command flags. If a step depends on information you don't have, flag it with `[VERIFY]` rather than guessing."
+!!! info "Format — Describe the output shape"
 
-**6. Examples** — Show, don't just tell.
-One or two worked examples of the output you want (a technique called *few-shot prompting*) often outperforms a long explanation. Examples act as templates the model can align to, and are especially powerful for tone, structure, and edge cases that are hard to describe in words.
-*Example:* "Here are two rewritten steps in the style I want: [example 1] … [example 2] … Now apply the same treatment to the steps below."
+    The desired style, structure, or format of the response. Do you want prose? A numbered list? A table with specific columns? Markdown? JSON? Specify it.
+    
+    !!! example
+    
+        "Return the result as a numbered list with each step under 20 words. Add a short 'Why this matters' note under steps 3 and 5."
+
+!!! info "Constraints** — Define the guardrails"
+
+    Any limitations on the generated output — length, tone, forbidden terms, reading level, style guide rules, what the output must *not* do. Constraints are often what separate a generic response from one you can actually use.
+    
+    !!! example
+    
+        "Avoid marketing language. Do not invent command flags. If a step depends on information you don't have, flag it with `[VERIFY]` rather than guessing."
+
+!!! info "Examples — Show, don't just tell"
+
+    One or two worked examples of the output you want (a technique called *few-shot prompting*) often outperforms a long explanation. Examples act as templates the model can align to, and are especially powerful for tone, structure, and edge cases that are hard to describe in words.
+    
+    !!! example
+    
+        "Here are two rewritten steps in the style I want: [example 1] … [example 2] … Now apply the same treatment to the steps below."
 
 > 💡 If you run the same prompt in the AI model twice, you may be surprised to get different results each time. LLMs are inherently non-deterministic — randomness is introduced during training and response generation, which allows for more creativity and spontaneity than a purely deterministic system would. This is an essential, virtually defining, feature of LLMs.
 
