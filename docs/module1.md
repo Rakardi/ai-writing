@@ -71,9 +71,9 @@ Not all AI tools handle your data the same way.
 
 If you do not know which tier you are on, ask your support team before pasting anything non-public.
 
-!!! info
+!!! info "The safest habit"
 
-    **The safest habit:** sanitize first, then paste. The two seconds it takes to replace a customer name with `[CUSTOMER]` is cheaper than any conversation you will have after a data leak.
+    Sanitize first, then paste. The two seconds it takes to replace a customer name with `[CUSTOMER]` is cheaper than any conversation you will have after a data leak.
 
 ---
 
