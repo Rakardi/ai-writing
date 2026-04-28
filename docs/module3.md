@@ -1,7 +1,8 @@
 # AI Limitations
 
-> *"The real problem is not whether machines think but whether men do."*
-> — B. F. Skinner
+!!! quote ""
+
+    *"The real problem is not whether machines think but whether men do."* — B. F. Skinner
 
 AI is powerful, and it is confidently wrong. Those two facts coexist, and learning to hold them together is most of what this module is about. The failures below aren't edge cases you might occasionally meet; they're structural features of how these systems work. Knowing the shape of each one is what lets you keep the speed AI offers without paying for it in quiet mistakes that reach your readers.
 
@@ -45,7 +46,9 @@ A standard LLM extrapolates beyond its training data, filling gaps with confiden
 **Reasoning-model errors — confident wrong answers.**
 Newer reasoning models are designed to think step by step, and they often display their reasoning chain so you can follow along. This is genuinely useful, and it introduces a new failure mode. A reasoning model can produce a chain that is internally consistent, fluently argued, and still wrong — because one early assumption was wrong. The chain looks like careful deliberation. The conclusion looks hard-earned. Both can be confidently incorrect at the same time.
 
-Try this when you meet a long reasoning chain on a claim that matters: read the first two or three steps, then ask, *"Are the premises here actually true?"* If yes, read on. If no, the elegance of the downstream reasoning doesn't save you.
+!!! tip ""
+
+    Try this when you meet a long reasoning chain on a claim that matters: read the first two or three steps, then ask, *"Are the premises here actually true?"* If yes, read on. If no, the elegance of the downstream reasoning doesn't save you.
 
 **Sycophancy — the agreeable-output failure mode.**
 Models can be trained, or fine-tuned, to produce outputs users find agreeable rather than outputs that are accurate. Yours may confirm your assumptions, validate your draft, or soften every disagreement into near-agreement. If you notice the model reliably opens with "Great approach!" before offering feedback, treat that warmth as ambient tone, not as evaluation. Paste a deliberately flawed draft sometime and see whether the model catches the flaws or praises the structure. A little adversarial probing tells you quickly how agreeable your tool is under the hood.
@@ -70,8 +73,6 @@ The mechanisms differ; the habit is the same. Verify claims against authoritativ
 Even factually correct output can miss the context of *your* product, *your* audience, or *your* organization. The model doesn't know your product's terminology, your audience's skill level, your legal constraints, or what was decided in last week's roadmap meeting. It also doesn't write in your voice. Left unattended, AI prose drifts toward the statistical middle: grammatically perfect, tonally flat, padded with "It is important to note that…" and "In order to…", and rhythmically identical paragraph after paragraph.
 
 The fix for both is the same in shape: give the model what it can't infer. A short reusable "context block" at the start of relevant prompts — audience, product name, style conventions — handles a lot. Actual voice samples from your documentation ("Rewrite in a style similar to this passage…") steer the model more reliably than any number of adjectives like *concise* or *conversational*. Name anti-patterns explicitly: *"Avoid opening with 'In this guide' or 'It is important to note.'"* And accept that voice is an editorial pass of its own — first-draft AI prose will need one, and the time for it belongs in the plan.
-
-A useful test: paste an AI draft next to a draft from a colleague. If you can tell which is which in five seconds, stylistic drift is winning.
 
 ---
 
