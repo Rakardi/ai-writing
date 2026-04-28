@@ -2,7 +2,7 @@
 
 !!! quote ""
 
-    *"The real problem is not whether machines think but whether men do."* — B. F. Skinner
+    "The real problem is not whether machines think but whether men do." — B. F. Skinner
 
 AI is powerful, and it is confidently wrong. Those two facts coexist, and learning to hold them together is most of what this module is about. The failures below aren't edge cases you might occasionally meet; they're structural features of how these systems work. Knowing the shape of each one is what lets you keep the speed AI offers without paying for it in quiet mistakes that reach your readers.
 
