@@ -30,15 +30,19 @@ A well-crafted prompt is rarely a single sentence. Think of it as a small **brie
 
 You won't always need all six. A quick brainstorming prompt might use only Role and Task. A production-grade rewrite prompt for customer-facing docs will usually benefit from all six. Treat the list below as a **checklist you scan**, not a template you mechanically fill in.
 
-*Click each card to see more information.*
+!!! info "Role — Tell the AI who to be"
 
-**1. Role** — Tell the AI who to be.
-The identity or perspective you want the AI model to assume when generating its output. Assigning a role activates relevant patterns in the model's training and shapes tone, vocabulary, and level of rigor.
-*Example:* "You are a senior technical writer specializing in developer documentation for cloud platforms."
+    The identity or perspective you want the AI model to assume when generating its output. Assigning a role activates relevant patterns in the model's training and shapes tone, vocabulary, and level of rigor.
 
-**2. Task** — State the action, precisely.
-The specific thing you want done, formulated as a concrete verb and deliverable. Vague tasks produce vague output; name both the action and the object.
-*Example:* "Rewrite the following installation steps for a first-time user who has never used the command line."
+    !!! example
+        "You are a senior technical writer specializing in developer documentation for cloud platforms."
+
+!!! info "Task — State the action, precisely"
+
+    The specific thing you want done, formulated as a concrete verb and deliverable. Vague tasks produce vague output; name both the action and the object.
+
+    !!! example
+        "Rewrite the following installation steps for a first-time user who has never used the command line."
 
 **3. Context** — Supply the background the model can't infer.
 Supplementary information that guides the model toward more useful responses: audience, product, constraints, the situation the content will live in. Context is where hallucinations are most often prevented, because the model can only reason about what you tell it.
