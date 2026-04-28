@@ -2,172 +2,35 @@
 icon: lucide/rocket
 ---
 
-# Get started
+# About the Course
 
-For full documentation visit [zensical.org](https://zensical.org/docs/).
+This course introduces Artificial Intelligence (AI) for technical communicators. It covers the key concepts and limitations of AI from the technical writer's perspective, and shows how AI supports the real work of documentation — research, organization, drafting, revision, and publication. Theory is kept short; practical examples carry most of the weight.
 
-## Commands
+!!! info
 
-* [`zensical new`][new] - Create a new project
-* [`zensical serve`][serve] - Start local web server
-* [`zensical build`][build] - Build your site
+    Use AI platforms approved by your company or your project to explore different AI models. Before introducing AI into any workflow, confirm it is permitted under your project's AI policy and obtain appropriate permissions from stakeholders to avoid exposing sensitive data to external systems.
 
-  [new]: https://zensical.org/docs/usage/new/
-  [serve]: https://zensical.org/docs/usage/preview/
-  [build]: https://zensical.org/docs/usage/build/
+## Objectives
 
-## Examples
+By the end of this course, you will be able to:
 
-### Admonitions
+- Explain the foundational concepts of AI and their applications in technical writing.
+- Apply the principles of prompt engineering for effective and precise interactions with AI.
+- Recognize AI limitations and apply practical mitigations within the context of technical communication.
+- Classify data before submitting it to any AI tool, and apply your organization's AI and confidentiality policies in daily work.
+- Evaluate AI outputs systematically — including techniques for verification, measurement, and error detection.
+- Implement AI throughout the technical writing process, from preparation to revision.
+- Decide when AI should augment, collaborate with, or replace human judgment in documentation tasks.
+- Decide when an agentic workflow is the right tool — and when it introduces more risk than value.
 
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/)
+## Audience
 
-!!! note
+Technical writers with little to zero experience with Artificial Intelligence in technical communication. This includes both professionals who are new to AI-assisted workflows and practitioners who are new to their organization and need to understand how AI fits into the team's documentation practices.
 
-    This is a **note** admonition. Use it to provide helpful information.
+## How to Use This Course
 
-!!! warning
+This is a self-paced course of approximately two-three hours. At the end, you will find a **glossary** for quick reference on unfamiliar terms and a **self-assessment checklist** to help you map your own readiness and identify further opportunities for learning.
 
-    This is a **warning** admonition. Be careful!
+AI tools and model names change quickly. This course is deliberately written around concepts and habits rather than product names, so the material stays useful as the tool landscape shifts.
 
-### Details
-
-> Go to [documentation](https://zensical.org/docs/authoring/admonitions/#collapsible-blocks)
-
-??? info "Click to expand for more info"
-
-    This content is hidden until you click to expand it.
-    Great for FAQs or long explanations.
-
-## Code Blocks
-
-> Go to [documentation](https://zensical.org/docs/authoring/code-blocks/)
-
-``` python hl_lines="2" title="Code blocks"
-def greet(name):
-    print(f"Hello, {name}!") # (1)!
-
-greet("Python")
-```
-
-1.  > Go to [documentation](https://zensical.org/docs/authoring/code-blocks/#code-annotations)
-
-    Code annotations allow to attach notes to lines of code.
-
-Code can also be highlighted inline: `#!python print("Hello, Python!")`.
-
-## Content tabs
-
-> Go to [documentation](https://zensical.org/docs/authoring/content-tabs/)
-
-=== "Python"
-
-    ``` python
-    print("Hello from Python!")
-    ```
-
-=== "Rust"
-
-    ``` rs
-    println!("Hello from Rust!");
-    ```
-
-## Diagrams
-
-> Go to [documentation](https://zensical.org/docs/authoring/diagrams/)
-
-``` mermaid
-graph LR
-  A[Start] --> B{Error?};
-  B -->|Yes| C[Hmm...];
-  C --> D[Debug];
-  D --> B;
-  B ---->|No| E[Yay!];
-```
-
-## Footnotes
-
-> Go to [documentation](https://zensical.org/docs/authoring/footnotes/)
-
-Here's a sentence with a footnote.[^1]
-
-Hover it, to see a tooltip.
-
-[^1]: This is the footnote.
-
-
-## Formatting
-
-> Go to [documentation](https://zensical.org/docs/authoring/formatting/)
-
-- ==This was marked (highlight)==
-- ^^This was inserted (underline)^^
-- ~~This was deleted (strikethrough)~~
-- H~2~O
-- A^T^A
-- ++ctrl+alt+del++
-
-## Icons, Emojis
-
-> Go to [documentation](https://zensical.org/docs/authoring/icons-emojis/)
-
-* :sparkles: `:sparkles:`
-* :rocket: `:rocket:`
-* :tada: `:tada:`
-* :memo: `:memo:`
-* :eyes: `:eyes:`
-
-## Maths
-
-> Go to [documentation](https://zensical.org/docs/authoring/math/)
-
-$$
-\cos x=\sum_{k=0}^{\infty}\frac{(-1)^k}{(2k)!}x^{2k}
-$$
-
-!!! warning "Needs configuration"
-    Note that MathJax is included via a `script` tag on this page and is not
-    configured in the generated default configuration to avoid including it
-    in a pages that do not need it. See the documentation for details on how
-    to configure it on all your pages if they are more Maths-heavy than these
-    simple starter pages.
-
-<script id="MathJax-script" src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
-<script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [["\\(", "\\)"]],
-      displayMath: [["\\[", "\\]"]],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      ignoreHtmlClass: ".*|",
-      processHtmlClass: "arithmatex"
-    }
-  };
-
-  document$.subscribe(() => {
-    MathJax.startup.output.clearCache()
-    MathJax.typesetClear()
-    MathJax.texReset()
-    MathJax.typesetPromise()
-  })
-</script>
-
-## Task Lists
-
-> Go to [documentation](https://zensical.org/docs/authoring/lists/#using-task-lists)
-
-* [x] Install Zensical
-* [x] Configure `zensical.toml`
-* [x] Write amazing documentation
-* [ ] Deploy anywhere
-
-## Tooltips
-
-> Go to [documentation](https://zensical.org/docs/authoring/tooltips/)
-
-[Hover me][example]
-
-  [example]: https://example.com "I'm a tooltip!"
+One module — **Prompt Library** — is written as a reference rather than a read-through. You can skim it on first pass and return to individual prompts as real tasks arise; reading it end-to-end is not required to complete the course.
