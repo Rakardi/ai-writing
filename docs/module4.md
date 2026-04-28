@@ -62,7 +62,7 @@ You won't always need all six. A quick brainstorming prompt might use only Role 
     
         "Return the result as a numbered list with each step under 20 words. Add a short 'Why this matters' note under steps 3 and 5."
 
-!!! info "Constraints** — Define the guardrails"
+!!! info "Constraints — Define the guardrails"
 
     Any limitations on the generated output — length, tone, forbidden terms, reading level, style guide rules, what the output must *not* do. Constraints are often what separate a generic response from one you can actually use.
     
