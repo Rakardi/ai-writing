@@ -138,11 +138,11 @@ You've iterated fifteen times. The results are inconsistent. The task keeps slip
 
 Three situations tell you it's time to move beyond prompt engineering:
 
-1. **Dynamic or real-time information.** No matter how carefully you prompt, a base model can't tell you today's outage status, this morning's build log, or the commit that broke the test suite. You need retrieval (RAG), tool use, or an agent that can query live systems. This is where agents come in (see **Agentic AI Workflows for Technical Writers**).
+1. **Dynamic or real-time information.** No matter how carefully you prompt, a base model can't tell you today's outage status, this morning's build log, or the commit that broke the test suite. You need retrieval (RAG), tool use, or an agent that can query live systems. This is where agents come in (see [Agentic AI Workflows for Technical Writers](module8.md)).
 
 2. **Integration with external systems.** If the task requires pulling from live data sources, writing to a system of record, or interacting with an API, prompt engineering alone can't reach outside the chat window. You need a workflow that gives the model tools.
 
-3. **Repetitive tasks at scale.** If you find yourself pasting the same prompt twenty times a week with small variations, the prompt itself is fine — the delivery mechanism is the problem. You need automation, whether through saved prompt templates, a prompt library (see the *Building a Prompt Library* callout below), or a lightweight pipeline.
+3. **Repetitive tasks at scale.** If you find yourself pasting the same prompt twenty times a week with small variations, the prompt itself is fine — the delivery mechanism is the problem. You need automation, whether through saved prompt templates, a prompt library (see the [Building a Prompt Library](#building-a-prompt-library)), or a lightweight pipeline.
 
 Knowing when to stop tuning a prompt and start designing a workflow is itself part of the craft. The best prompt engineers also know when *not* to reach for a prompt.
 
