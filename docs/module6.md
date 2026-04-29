@@ -1,8 +1,10 @@
 # Prompt Library
 
-> 💡 **How to use this module.** Unlike the modules before it, this one is a **reference, not a read-through**. You don't need to work through every prompt to complete the course — skim the structure, note what's here, and come back when a real task on your desk matches one of the entries. The prompts are organized by stage of the writing process so you can find the right one fast. Treat this module the way you'd treat the glossary: useful when you need it, not homework.
+!!! tip "How to use this module"
+    
+    Unlike the modules before it, this one is a **reference, not a read-through**. You don't need to work through every prompt to complete the course — skim the structure, note what's here, and come back when a real task on your desk matches one of the entries. The prompts are organized by stage of the writing process so you can find the right one fast. Treat this module the way you'd treat the glossary: useful when you need it, not homework.
 
-If Prompt Engineering taught you the anatomy of a prompt and AI in the Technical Writing Process walked you through the shape of the technical writing process, this module gives you the raw material — a working collection of prompts, one for every place in the process where AI most often earns its keep.
+If [Prompt Engineering](module4.md) taught you the anatomy of a prompt and [AI in the Technical Writing Process](module5.md) walked you through the shape of the technical writing process, this module gives you the raw material — a working collection of prompts, one for every place in the process where AI most often earns its keep.
 
 Think of what follows as a phrasebook rather than a script. A phrasebook gives you the sentences that work in recognizable situations; it doesn't tell you exactly what to say in every conversation. Every prompt below is a starting point. Your product, your audience, your voice, and your constraints aren't in the prompt yet — that's the part you bring. Try one, adapt it, notice what changed, and keep the version that worked for you.
 
@@ -38,7 +40,6 @@ Each of the twenty prompts follows the same structure, so you can scan quickly:
 
 > ⚠️ **A reminder from Module 1.** Every prompt below asks you to paste something — a brief, a spec, source material, a draft. Before you paste, run the *Before You Paste* checklist. A sanitized input is cheaper than any conversation you'll have after a data leak.
 
----
 
 ## Preparation
 
@@ -81,7 +82,6 @@ Brief:
 - Swap the role ("senior documentation manager," "lead UX writer," "compliance-focused technical editor") to change the lens.
 - Add a "What I already know" paragraph before the brief to save the model from speculating about your context.
 
----
 
 ### Prompt 1.2 — Three-Persona Audience Sketch (with Diversity Pressure)
 
@@ -135,7 +135,6 @@ not content):
 - If your product serves both consumers and professionals, ask for five personas split across both.
 - For regulated industries, add a dimension: "relationship to compliance (resents it / tolerates it / champions it)."
 
----
 
 ### Prompt 1.3 — Oversight Gate Map for a Planned Workflow
 
@@ -179,7 +178,6 @@ place I haven't designed a gate in but should have, say so.
 - For high-stakes or regulated content, add: *"Assume that any published error will trigger a post-incident review. Design the gates accordingly."*
 - Reuse the output as a checklist during workflow testing — gates are where bugs hide.
 
----
 
 ## Research
 
@@ -235,7 +233,6 @@ Source material:
 - For sources with code or API definitions, add: *"Quote any signatures, endpoint paths, or configuration keys exactly; do not paraphrase them."*
 - Reuse this prompt's output as the briefing document you bring into an SME interview — it surfaces your questions for you.
 
----
 
 ### Prompt 2.2 — SME Interview Question Generator
 
@@ -292,7 +289,6 @@ Example of the tone I want:
 - For a hostile or time-poor SME, ask the model to reorder the questions so that if the interview is cut to 10 minutes, the most valuable questions come first.
 - Keep the unasked questions in a parking lot — they often become the outline of the FAQ.
 
----
 
 ### Prompt 2.3 — User Feedback Clustering with Evidence
 
@@ -343,7 +339,6 @@ Feedback:
 - For multilingual feedback, add: *"Preserve quotes in their original language; translate only the cluster summaries."*
 - When feedback is large, chain: cluster one source first, then feed the cluster summaries back in with a new batch and ask the model to merge.
 
----
 
 ## Organization
 
@@ -400,7 +395,6 @@ sentences, why.
 - If you already have a draft outline, paste it as a fourth option and ask the model to compare yours against the three it generated.
 - For a series of related pages, run the prompt once per page and then ask the model to check that the resulting outlines work together — cross-page consistency is its own skill.
 
----
 
 ### Prompt 3.2 — Sequencing Check for a Task Flow
 
@@ -447,7 +441,6 @@ improvements to look useful.
 - For cross-team procedures (where different roles do different steps), add: *"Flag any step where the actor changes — the reader needs a cue at every handoff."*
 - Run this prompt after writing (Stage 4) as well as during outlining. Sequencing bugs often survive drafting and die only in review.
 
----
 
 ### Prompt 3.3 — Information Architecture Sanity Check
 
@@ -505,7 +498,6 @@ Example of the kind of trace I'm looking for:
 - For large doc sets, run this prompt once per persona and compare traces. Conflicts across personas are often the signal for a landing page or a "choose your path" page.
 - Feed in analytics data if you have it: *"The three most-searched terms in this doc set are X, Y, Z. Do those terms appear clearly in the IA?"*
 
----
 
 ## Writing
 
@@ -563,7 +555,6 @@ specificity, not the content):
 - For product families with a strict style guide, paste the relevant rules (not the whole guide) into the voice section.
 - If the outline is very long, use prompt chaining: draft one section per turn, editing as you go, rather than asking for the whole thing at once.
 
----
 
 ### Prompt 4.2 — Expanding a Stub into a Full Explanation
 
@@ -616,7 +607,6 @@ Example of the density I want (style only):
 - For concept-heavy sections, add: *"Define every term the first time it appears. If a term needs more than one sentence to define, it deserves its own subsection — flag it."*
 - For procedure-heavy sections, switch the example to a procedural one and ask the model to use numbered steps for any sequence of three or more actions.
 
----
 
 ### Prompt 4.3 — Tone Shift Without Losing Meaning
 
@@ -673,7 +663,6 @@ Example pairs of the shift I want (tone only, not content):
 - For long documents, shift tone section by section rather than all at once — mid-document drift is common.
 - Keep your before/after example pairs in a personal style file. Over time they become a more reliable tone-steering tool than any adjective.
 
----
 
 ### Prompt 4.4 — Catching AI's Characteristic Writing Tells
 
@@ -744,7 +733,6 @@ Examples of the kind of edit I want:
 - Run this prompt as the *last* edit pass, after content review but before style review. Content errors dressed in fluent prose are more dangerous than awkward prose.
 - Over time, keep a personal "tells I fixed" log. You'll start catching them while writing instead of after.
 
----
 
 ## Revision
 
@@ -807,7 +795,6 @@ Example of the kind of reaction I want (style only):
 - For long drafts, chunk by section. A running commentary over 40 pages degrades.
 - Use this prompt *before* your first SME review, not after. It catches the errors SMEs don't notice because they, like you, already understand the product.
 
----
 
 ### Prompt 5.2 — Factual Claim Audit
 
@@ -861,7 +848,6 @@ tight.
 - For draft-by-AI content, run this prompt regardless of how confident you feel. Fluent writing masks fabricated facts; the audit is the counterweight.
 - Keep the output as a review artifact. If a reader later challenges a claim, the audit trail matters.
 
----
 
 ### Prompt 5.3 — Style Guide Conformance Pass
 
@@ -913,7 +899,6 @@ example occurrences.
 - Keep a short "rules that catch the most real issues" list separate from the full style guide. Thirty rules outperform three hundred when the model has to hold them all at once.
 - After an AI-heavy writing session, run this prompt as a matter of course. AI drafts drift toward generic style even when your guide is specific.
 
----
 
 ### Prompt 5.4 — Pre-Publication Readiness Review
 
@@ -971,7 +956,6 @@ agreed, where they disagreed, and which view you trust more and why.
 - For docs that touch regulated content, add a seventh question: *"Is there any claim in this draft that our compliance or legal reviewers should see before publication?"*
 - Keep the reconciliation section as a review artifact alongside the factual audit from Prompt 5.2. Together they form a record of due diligence.
 
----
 
 ## Publication & Maintenance
 
@@ -1040,7 +1024,6 @@ Example of the style I want:
 - For monthly or quarterly releases, keep a running "voice sample" of past release notes and paste a short excerpt as the style example. Consistency across releases is a feature.
 - For security entries, add: *"For each security entry, note the severity level and whether a CVE is associated. If either is missing from the change log, flag it for the security team."*
 
----
 
 ### Prompt 6.2 — Localization-Ready Rewrite
 
@@ -1109,7 +1092,6 @@ Example of the kind of rewrite I want:
 - Keep a project glossary of "do not translate" and "translate carefully" terms. Paste it in as context; the list becomes more useful with every project.
 - For simultaneous publication across several languages, run this prompt *before* the final style pass. A style pass on the English will otherwise have to be redone after localization surfaces new issues.
 
----
 
 ### Prompt 6.3 — Retirement and Redirect Plan for Outdated Content
 
@@ -1190,5 +1172,3 @@ A few practices that help a prompt library grow usefully rather than just grow:
 For the deeper treatment of prompt library practice — how to organize, version, and govern one at team scale — see the **Building a Prompt Library** callout earlier in this course. This module gives you the raw material; The Building a Prompt Library callout gives you the habits for tending it.
 
 And for a reminder of what this library is *for*: every prompt above exists to make a specific stage of Module 5's process faster, sharper, or more honest. The library is not the work. The work is the document that ships, the reader it serves, and the judgment you brought to both.
-
----
