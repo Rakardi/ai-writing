@@ -12,7 +12,6 @@ By the end of this module, you'll be able to:
 - Recognize the risks specific to agents — and how to mitigate them.
 - Read a real-world agentic workflow design and identify where human judgment is preserved.
 
----
 
 ## What Makes an AI System "Agentic"?
 
@@ -27,7 +26,6 @@ A useful mental model: an LLM is a very knowledgeable colleague who answers one 
 
 > 💡 The **Model Context Protocol (MCP)** is an emerging open standard for connecting AI models to external tools and data sources in a consistent way. If your organization is building agentic workflows, MCP is worth knowing as the standard that is likely to shape how tools and agents interoperate over the next few years. You do not need to master it to use agents effectively today; you do need to know that the ecosystem is moving toward standardization, which will make agent-based work more portable and less tool-specific over time.
 
----
 
 ## The Five Risks Specific to Agents
 
@@ -39,7 +37,6 @@ Agentic workflows add five classes of risk that prompt-based work does not have.
 4. **Runaway loops.** The agent iterates endlessly on an unreachable goal. *Mitigation:* explicit stopping conditions, maximum step counts, time budgets.
 5. **Accountability gap.** When agent output is wrong, who is responsible? *Mitigation:* every agent output is attributed to a human owner. "The agent did it" is not an answer.
 
----
 
 ## When To Use an Agent
 
@@ -68,7 +65,6 @@ A quick reference:
 | "This takes me two hours every time and never varies." | Strong candidate; the ROI is there. |
 | "Something this important should have a human on every step." | Don't automate — redesign the workflow with tighter human gates instead. |
 
----
 
 ## When Not To Use an Agent
 
@@ -81,7 +77,6 @@ Not every repeating task is an agent candidate. An agent is the wrong tool when:
 
 Prompt engineering remains the right tool for one-off, judgment-heavy, or context-sensitive work. Agents are for the repeating, stable, verifiable work — and even then, with human review gates built into the design.
 
----
 
 ## A Worked Example: The Intelligent Documentation System
 
@@ -156,4 +151,3 @@ For regulated or high-stakes content, the Augmentation zone (see The Spectrum: A
 !!! note
 
     The Intelligent Documentation System is not a product you install. It is a design pattern you implement. The building blocks — a ticket system with an API, a Git repository, a documentation platform, an LLM API, a knowledge search index — are all standard tools. The agentic layer is the orchestration that connects them and the gate design that keeps a human in the loop at the right moments. The pattern is what is transferable; the specific tools will vary by organisation.
----
