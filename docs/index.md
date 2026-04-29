@@ -25,8 +25,8 @@ Technical writers with little to zero experience with Artificial Intelligence in
 
 ## How to Use This Course
 
-This is a self-paced course of approximately two-three hours. At the end, you will find a **glossary** for quick reference on unfamiliar terms and a **self-assessment checklist** to help you map your own readiness and identify further opportunities for learning.
+This is a self-paced course of approximately two-three hours. At the end, you will find a [glossary](glossary.md) for quick reference on unfamiliar terms and a [self-assessment checklist](self-assessment.md) to help you map your own readiness and identify further opportunities for learning.
 
 AI tools and model names change quickly. This course is deliberately written around concepts and habits rather than product names, so the material stays useful as the tool landscape shifts.
 
-One module — **Prompt Library** — is written as a reference rather than a read-through. You can skim it on first pass and return to individual prompts as real tasks arise; reading it end-to-end is not required to complete the course.
+One module — [Prompt Library](module6.md) — is written as a reference rather than a read-through. You can skim it on first pass and return to individual prompts as real tasks arise; reading it end-to-end is not required to complete the course.
