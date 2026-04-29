@@ -1,4 +1,3 @@
-
 # Key Concepts
 
 This module gives you the vocabulary you need to understand the AI field, follow vendor documentation, and choose the right tool for a given task — without getting lost in hype or acronyms.
@@ -9,7 +8,6 @@ By the end of this module, you'll be able to:
 - Distinguish the main categories of AI models (general-purpose LLMs, reasoning models, SLMs, multimodal, RAG-enabled, agents) and recognize which category a given tool belongs to.
 - Apply a three-step decision aid — shape, stakes, sensitivity — to choose the right kind of AI tool for a documentation task.
 
----
 
 ## Key Concepts
 
@@ -96,7 +94,6 @@ The concept of agentic AI is explored in detail in **Agentic AI Workflows for Te
 
     *Think of an agent as a project coordinator who takes your goal, breaks it into tasks, assigns each task to the right tool, checks on progress, handles exceptions, and reports back—without needing you to be present at every step. Powerful; but the coordinator still needs your oversight at key decision points.*
 
----
 
 > 💡 **A map of AI model categories**
 >
@@ -111,7 +108,6 @@ The concept of agentic AI is explored in detail in **Agentic AI Workflows for Te
 >
 > When in doubt, start with a general-purpose LLM. Escalate to reasoning models for complex judgment, SLMs for repeatable narrow tasks, and agentic frameworks only when a task truly requires multi-step execution.
 
----
 
 ## Choosing the Right Tool: A Decision Aid
 
@@ -141,5 +137,3 @@ Return to **Data Handling in Practice: What to Paste, What Not to Paste**. If th
 !!! tip "Rule of thumb"
 
     Match the tool to the task's *shape*, *stakes*, and *sensitivity*. If you're choosing a tool for reasons other than those three, you're probably choosing it because it's familiar, not because it's right.
-
----
