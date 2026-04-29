@@ -22,7 +22,7 @@ site_description = "A course to help technical communicators build structured kn
 # The site_author attribute. This is used in the HTML head element.
 #
 # Read more: https://zensical.org/docs/setup/basics/#site_author
-site_author = "Arkadi"
+site_author = "Arkadi Bourkov"
 
 # The site_url is the canonical URL for your site. When building online
 # documentation you should set this.
@@ -34,7 +34,7 @@ site_url = "https://rakardi.github.io/ai-writing/"
 #
 # Read more: https://zensical.org/docs/setup/basics/#copyright
 copyright = """
-Copyright &copy; 2026 The authors
+Copyright &copy; 2026 Arkadi Bourkov
 """
 
 # Zensical supports both implicit navigation and explicitly defined navigation.
