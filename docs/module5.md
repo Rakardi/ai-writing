@@ -49,13 +49,14 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 *A couple of worked prompts.* Try these as starting points; adjust the bracketed fields for your project.
 
 | Task | Example prompt |
-|---|---|
+| --- | --- |
 | Generate realistic user personas. | "The product is [describe product]. The primary purpose of its documentation is to guide users through the product with minimal frustration. Create three user personas. For each persona include: name, role, technical background, primary goals when using the documentation, attitude toward reading documentation (supportive / skeptical / reluctant), preferred format, and country or region of origin if relevant. Be specific and realistic." |
 | Map the oversight gates in a planned workflow. | "I am designing the following documentation workflow: [describe workflow]. Assume the role of a technical workflow designer. Identify the decision points where a human reviewer must approve or intervene before the process continues. For each gate, specify: what the reviewer should check, what a passing result looks like, and what would trigger escalation to a human decision-maker." |
 
-> 💡 **Try this.** Before you run either prompt, pause and write down what *you* think the answer should look like — two or three bullets will do. Compare your version to AI's. The gap between them is where the real learning sits: sometimes AI surfaces something you'd missed, and sometimes you realize you knew more than you gave yourself credit for.
+!!! tip "Try this"
 
----
+    Before you run either prompt, pause and write down what *you* think the answer should look like — two or three bullets will do. Compare your version to AI's. The gap between them is where the real learning sits: sometimes AI surfaces something you'd missed, and sometimes you realize you knew more than you gave yourself credit for.
+
 
 ### Stage 2. Research
 
@@ -84,7 +85,9 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 | Summarize secondary source material for a specific documentation task. | "Summarize the following materials for a technical writer documenting [product feature]: [paste content]. Focus on: what the feature does, who it is for, known edge cases or limitations, and anything a user might misunderstand. Flag any gaps or contradictions in the source material." |
 | Evaluate whether a research task is automation-worthy. | "I need to complete the following research task repeatedly: [describe task]. It involves these steps: [list steps] and these data sources: [list sources]. Assess whether this task is a good candidate for an automated agent workflow by evaluating: how routine and well-defined the steps are, how frequently the task repeats, and what the setup cost vs. time savings trade-off might be. List any additional information I would need to design the workflow." |
 
-> 💡 **A useful habit.** When AI summarizes a source for you, ask it a follow-up: *"What claims in this summary should I verify before trusting?"* Models are often surprisingly good at flagging their own weak points when you invite them to. It's a small move that saves hours later.
+!!! tip "Useful habit"
+
+    When AI summarizes a source for you, ask it a follow-up: *"What claims in this summary should I verify before trusting?"* Models are often surprisingly good at flagging their own weak points when you invite them to. It's a small move that saves hours later.
 
 ### Stage 3. Organization
 
@@ -113,9 +116,10 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 | Generate outline options for a new document. | "I am writing [document type] for [audience] about [topic]. The goal is [goal]. The audience's existing knowledge is [describe]. Propose three different outline structures: one task-oriented, one concept-oriented, and one hybrid. For each, list the top-level headings and a one-line rationale. Note which structure you would recommend and why." |
 | Group a messy list of topics. | "Here are 22 topics I've gathered from research: [paste list]. Group them into a logical outline for a [document type]. Use no more than 5 top-level groups. For each group, suggest a heading in sentence case, starting with an action verb where appropriate. Flag any topics that don't fit, and any groups that look thin enough to merge." |
 
-> 💡 **Try this.** Ask for *three* outlines rather than one. Variation is cheap for the model and expensive for you; letting AI generate alternatives is one of the places the economics tilt most clearly in your favor. The outline you finally ship will often be a stitch of the best bits from two of the three.
+!!! tip "Try this"
 
----
+    Ask for *three* outlines rather than one. Variation is cheap for the model and expensive for you; letting AI generate alternatives is one of the places the economics tilt most clearly in your favor. The outline you finally ship will often be a stitch of the best bits from two of the three.
+
 
 ### Stage 4. Writing
 
@@ -146,9 +150,10 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 | Draft a procedure from source notes. | "Using the notes below, draft a step-by-step procedure for [task]. Audience: [describe]. Style: numbered steps, imperative mood, one action per step, no more than one sentence per step. Include a short prerequisites list and a one-sentence confirmation of success at the end. Notes: [paste notes]. Flag any step where the notes are ambiguous or incomplete rather than guessing." |
 | Rewrite in a different register. | "Rewrite the following paragraph for a non-specialist audience. Keep all technical claims intact. Shorten sentences to 20 words or fewer where possible. Replace jargon with plain equivalents, but keep any term that is a product name or an industry-standard term. Preserve the original meaning exactly — flag any sentence where plain language would require losing precision. Paragraph: [paste paragraph]." |
 
-> 💡 **A habit worth forming.** When AI produces a draft, read it once for what it says — then read it again asking *what does it sound like it's trying to sound like?* That second read is where you catch the generic-corporate voice creeping in. It's also where your voice gets put back in.
+!!! tip "Useful habit"
 
----
+    When AI produces a draft, read it once for what it says — then read it again asking *what does it sound like it's trying to sound like?* That second read is where you catch the generic-corporate voice creeping in. It's also where your voice gets put back in.
+
 
 ### Stage 5. Revision
 
@@ -180,7 +185,9 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 | Review a draft against a style guide. | "Review the following draft against these style rules: [list 5–10 rules, e.g., sentence-case headings, no Latin abbreviations, second-person voice, Oxford commas, numbered steps in imperative mood]. For each rule, list the specific sentences or headings that violate it, and suggest a fix. Do not rewrite the whole draft. Draft: [paste draft]." |
 | Simulate a skeptical reviewer. | "Read the following draft as a skeptical senior engineer reviewing for technical accuracy. List every claim you would want to verify before approving, every place where a step could fail silently, and every assumption the draft makes about the reader's environment. Be concrete. Draft: [paste draft]." |
 
-> 💡 **Try this.** Run the same draft through two different "reviewer personas" — a first-time user and a skeptical SME. The comments you get back will barely overlap, and that's exactly the point. Each persona surfaces a different class of weakness.
+!!! tip "Try this"
+
+    Run the same draft through two different "reviewer personas" — a first-time user and a skeptical SME. The comments you get back will barely overlap, and that's exactly the point. Each persona surfaces a different class of weakness.
 
 
 ### Stage 6. Publication and Maintenance
@@ -211,7 +218,6 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 | Draft release-note entries from a changelog. | "Below is a list of changes from the [product] [version] changelog. Draft user-facing release notes grouped into: New features, Improvements, Bug fixes, and Breaking changes. Each entry should be one or two sentences, written in plain language for an end user rather than a developer. Omit internal refactors and purely cosmetic changes. Flag any change that needs SME clarification before it can be described to users. Changelog: [paste changelog]." |
 | Identify candidates for content retirement. | "I will paste a list of documentation pages along with their last-updated date and page-view count over the past year. For each page, recommend one of: keep as-is, needs update, candidate for archive, candidate for merge. Briefly justify each recommendation. Flag any page where the title suggests it may still be important even if traffic is low. Data: [paste data]." |
 
----
 
 ## Checkpoints, Gates, and the Cost of Skipping Them
 
@@ -236,9 +242,10 @@ A short, non-exhaustive cost-of-skipping inventory:
 | Accessibility and inclusion pass | A slightly less accessible page | Exclusion of a real segment of your users; compliance exposure |
 | "Are we answering the brief?" pass | A document that meets the spec as written | A document that meets the spec as written but not the problem it was meant to solve |
 
-> 💡 **A useful exercise.** Pick one workflow you're running this month. List the gates — all the places where a human currently looks at output before it moves to the next step. Then ask: if I added AI to this workflow, which gates would I keep, which would I strengthen, and which would I be tempted to quietly remove? The answers will often tell you more about the workflow than about the AI.
+!!! tip "Useful exercise"
 
----
+    Pick one workflow you're running this month. List the gates — all the places where a human currently looks at output before it moves to the next step. Then ask: if I added AI to this workflow, which gates would I keep, which would I strengthen, and which would I be tempted to quietly remove? The answers will often tell you more about the workflow than about the AI.
+
 
 ## The Process at a Glance
 
@@ -255,7 +262,6 @@ For quick reference, here is the technical writing process summarized across its
 
 Read across any row and you'll notice a pattern: the AI column grows as the task becomes more mechanical, the human column grows as the task becomes more contextual. This is the shape of the division of labor across the whole process. When a task feels mechanical, AI is probably a good fit. When a task feels like it requires knowing something not written down, it probably requires you.
 
----
 
 ## Looking Ahead: From Process to Prompt Library
 
@@ -267,5 +273,3 @@ Two habits will serve you well when you get there:
 2. **Write down what works.** When you adapt a prompt and it produces something useful, save the adapted version. Over a few months, you'll have built a personal prompt library that fits your work far better than any generic one. Prompt Engineering introduced the idea; Prompt Library gives you the raw material.
 
 Before you move on, a short self-check: for each of the six stages above, can you name one task you'd delegate to AI and one task you wouldn't? If the answer comes easily, the stage is clear for you. If it doesn't, that's the stage to re-read — or to experiment with first.
-
----
