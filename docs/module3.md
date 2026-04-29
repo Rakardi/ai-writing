@@ -13,7 +13,6 @@ By the end of this module, you'll be able to:
 - Apply the Four Ds (Delegation, Description, Discernment, Diligence) as a competency map for working with AI safely.
 - Classify any AI-generated claim as factual, structural, stylistic, or reasoning — and choose the verification technique that fits each kind.
 
----
 
 ## AI Limitations at a Glance
 
@@ -28,7 +27,6 @@ By the end of this module, you'll be able to:
 
 The rest of the module takes the three categories where technical writers meet the most trouble — Factual, Reasoning, Ethical — and gives each the depth it deserves. Context, Stylistic, and Operational are covered briefly; they matter, but they are less likely to quietly damage your work.
 
----
 
 ## Hallucinations and Factual Errors
 
@@ -68,7 +66,6 @@ The mechanisms differ; the habit is the same. Verify claims against authoritativ
 - **Cross-check with a second model.** Agreement between two independent models is a mild positive signal on a specific fact. Disagreement is a strong signal that more checking is needed.
 - **Lower the temperature** for factual work, if your tool exposes the setting. Lower temperatures produce more deterministic, less inventive responses.
 
----
 
 ## Context and Stylistic Drift
 
@@ -76,7 +73,6 @@ Even factually correct output can miss the context of *your* product, *your* aud
 
 The fix for both is the same in shape: give the model what it can't infer. A short reusable "context block" at the start of relevant prompts — audience, product name, style conventions — handles a lot. Actual voice samples from your documentation ("Rewrite in a style similar to this passage…") steer the model more reliably than any number of adjectives like *concise* or *conversational*. Name anti-patterns explicitly: *"Avoid opening with 'In this guide' or 'It is important to note.'"* And accept that voice is an editorial pass of its own — first-draft AI prose will need one, and the time for it belongs in the plan.
 
----
 
 ## Reasoning Failures
 
@@ -86,7 +82,6 @@ A complication worth naming: **a visible reasoning chain is not the same as a tr
 
 So check assumptions, not just conclusions. Ask *what is this answer taking for granted?* before asking whether the answer feels right. Probe with adversarial prompts: *"Give me three reasons this answer could be wrong,"* or *"What assumptions does this answer make?"* — the responses often surface real gaps. And when the subject is outside your expertise, that is exactly the moment to involve an SME, not the moment to trust the fluent explanation the model gave you.
 
----
 
 > 💡 **The Four D Framework: Your Competency Map for Working with AI**
 >
@@ -108,7 +103,7 @@ Every AI course tells you to verify outputs. Few tell you how. This section is D
 Not every claim in AI output is checked the same way. Classify before you check, and you'll spend your effort where it actually matters.
 
 | Kind of claim | What it looks like | How to check |
-|---|---|---|
+| --- | --- | --- |
 | **Factual** | "The API returns 200 on success." "This feature shipped in v3.2." | Check against the authoritative source — docs, spec, ticket, code. A plausible-looking hyperlink is not evidence a source exists; following the link and reading the source is. |
 | **Structural** | "The request body must contain `user_id` and `session_token`." | Check against schema, spec, or a working example. |
 | **Stylistic** | "Rewritten in a more formal tone." | Check against your style guide or voice samples. |
