@@ -25,7 +25,6 @@ Before you use any AI tool in your work, you need to know whether you are permit
 
 **If your project does not yet have a policy.** Use your project's existing data handling and confidentiality policies as your guide; default to the most restrictive interpretation. Documenting your own AI usage decisions in the meantime — what tools you used, what data you submitted, and what you verified — is good professional practice and will be valuable if a policy is established later.
 
----
 
 ## Data Handling in Practice: What to Paste, What Not to Paste
 
@@ -75,7 +74,6 @@ If you do not know which tier you are on, ask your support team before pasting a
 
     Sanitize first, then paste. The two seconds it takes to replace a customer name with `[CUSTOMER]` is cheaper than any conversation you will have after a data leak.
 
----
 
 ## Technical Writers in the World of AI
 
@@ -88,7 +86,6 @@ A more sustainable model emerges. Writers recognize AI as a powerful collaborato
 **Outcome**:
 Technical writers who adapt in this hybrid mode avoid obsolescence by balancing augmentation with human oversight. Their value shifts from churning out drafts to curating, validating, and pioneering new standards in technical communication. Organizations that foster this blend reduce risk, harness opportunity, and future-proof both their content and their teams.
 
----
 
 ## AI Benefits for Technical Writers
 
