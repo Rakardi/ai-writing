@@ -14,7 +14,6 @@ By the end of this module, you'll be able to:
 - Recognize the warning signs that tell you AI has too much control.
 - Identify which content types call for augmentation, hybrid approaches, or high automation.
 
----
 
 ## The Spectrum: Augmentation ← Hybrid → Replacement
 
@@ -38,7 +37,6 @@ None of these zones is inherently right or wrong. The right zone depends entirel
 
 Which approach fits? For a routine patch with a tight deadline: hybrid or replacement. For a mission-critical release where users are paying close attention: augmentation or hybrid. For a small internal fix: replacement.
 
----
 
 ## The Decision Framework: Four Questions
 
@@ -89,7 +87,6 @@ More time available allows for careful augmentation and deep iteration. Less tim
 | 15–30 min per 1,000 words | Spot-check replacement | Medium (risky) |
 | Less than 15 min per 1,000 words | Don't publish yet | Too risky |
 
----
 
 ## Red Flags: When Replacement Goes Wrong
 
@@ -113,6 +110,6 @@ You feel uncertain, but you publish anyway because the deadline is looming. This
 
 *How to recover:* if you cannot say you are 80% confident in a given output, that output is not ready to publish. Get an SME to validate, or negotiate a delay. If this happens repeatedly, shift to augmentation and rebuild your confidence in the domain.
 
-> ⚠️ **Word of caution.** The shift toward over-reliance is gradual and comfortable. Outputs look good. They usually are good. It's the edge cases—the hallucination that looked plausible, the outdated fact that slipped through—that cost you. Build the habit of reading before approving, even when everything seems fine.
+!!! warning "Word of caution"
 
----
+    The shift toward over-reliance is gradual and comfortable. Outputs look good. They usually are good. It's the edge cases—the hallucination that looked plausible, the outdated fact that slipped through—that cost you. Build the habit of reading before approving, even when everything seems fine.
