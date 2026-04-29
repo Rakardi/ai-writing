@@ -4,7 +4,7 @@ Until now, you have learned *how* AI works, *what* its limits are, and *how to p
 
 The technical writing process has always had a shape: you prepare, you research, you organize, you draft, you revise, you publish. AI does not change that shape. What it changes is *where inside each stage the work lives* — which parts shrink because a machine can do them in seconds, which parts expand because you now have time to do them properly, and which parts stay stubbornly, irreducibly human.
 
-This module walks through the stages one at a time. For each, you'll see what AI does well, where human judgment is essential, and one or two worked prompts you can adapt tomorrow. Treat the prompts as starting points — conversations, not scripts. (The full prompt library appears later in **Prompt Library**, with around twenty examples covering every stage below.)
+This module walks through the stages one at a time. For each, you'll see what AI does well, where human judgment is essential, and one or two worked prompts you can adapt tomorrow. Treat the prompts as starting points — conversations, not scripts. (The full prompt library appears later in [Prompt Library](module6.md), with around twenty examples covering every stage below.)
 
 By the end of this module, you'll be able to:
 
@@ -13,7 +13,8 @@ By the end of this module, you'll be able to:
 - Name the non-negotiable checkpoints in your own workflow — and explain the cost of skipping each.
 - Sketch an initial oversight plan for any documentation workflow that incorporates AI.
 
-> ⚠️ Before introducing AI into any new workflow, confirm it is permitted under your project's AI policy and obtain the appropriate permissions from stakeholders — so as not to expose any sensitive data to the LLM. (See **Data Handling in Practice: What to Paste, What Not to Paste** for the “Before You Paste” checklist.)
+!!! warning ""
+    Before introducing AI into any new workflow, confirm it is permitted under your project's AI policy and obtain the appropriate permissions from stakeholders — so as not to expose any sensitive data to the LLM.
 
 ---
 
@@ -37,7 +38,7 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 - **Draft a stakeholder matrix** covering typical roles, their interests, and their preferred communication formats.
 - **Compare tracking approaches** — spreadsheets, project management tools, docs-as-code pipelines — and summarize trade-offs before you commit.
 - **Draft a revision plan structure** with review stages, sign-off points, and iteration cycles.
-- **Map the oversight gates** in a planned workflow — the decision points where a human reviewer needs to approve before the process continues. (This is most useful if agentic workflows are in your future: agentic workflows depend on gates being designed in, not retrofitted. See **Agentic AI Workflows for Technical Writers**.)
+- **Map the oversight gates** in a planned workflow — the decision points where a human reviewer needs to approve before the process continues.
 
 *Where human judgment is essential.*
 
@@ -134,7 +135,7 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 *Where human judgment is essential.*
 
 - **Voice and style.** AI defaults to a generic middle register — pleasant, grammatical, instantly forgettable. Your readers know your product's voice; AI does not. Impose your voice every time.
-- **Technical accuracy.** Every factual claim, every code sample, every parameter name, every version number. AI will produce confidently wrong text faster than you can read it. (Recall **Hallucinations and Factual Errors**: the fix in all cases is the same — verify.)
+- **Technical accuracy.** Every factual claim, every code sample, every parameter name, every version number. AI will produce confidently wrong text faster than you can read it. The fix in all cases is the same — verify.
 - **Deciding what is worth saying.** A draft generated from an outline will often contain three paragraphs where one sentence would do. Writing is largely the art of knowing what not to write.
 - **Accessibility and inclusion.** AI-generated text can slip into idioms, culturally loaded metaphors, or assumptions about the reader's context. Read with accessibility and internationalization in mind.
 
@@ -237,8 +238,6 @@ A short, non-exhaustive cost-of-skipping inventory:
 
 > 💡 **A useful exercise.** Pick one workflow you're running this month. List the gates — all the places where a human currently looks at output before it moves to the next step. Then ask: if I added AI to this workflow, which gates would I keep, which would I strengthen, and which would I be tempted to quietly remove? The answers will often tell you more about the workflow than about the AI.
 
-The **Agentic AI Workflows for Technical Writers** section takes this idea further and applies it to agentic workflows — multi-step AI processes where the human is no longer sitting between every pair of steps. For now, it's enough to notice that *every* AI-assisted workflow has gates, whether or not anyone has drawn them on a diagram.
-
 ---
 
 ## The Process at a Glance
@@ -252,7 +251,7 @@ For quick reference, here is the technical writing process summarized across its
 | **Organization** | Outline options, topic groupings, TOC drafts, content-type recommendations, sequencing suggestions | Knowing what the reader came for, deciding what to cut, sequencing around invisible dependencies |
 | **Writing** | First drafts, register shifts, boilerplate, expanding notes, condensing, example generation | Voice, technical accuracy, deciding what to say, accessibility and inclusion |
 | **Revision** | Proofreading, consistency checks, style-guide compliance, gap-finding, reviewer-comment summarization, reviewer simulation | Which edits to accept, weighing reviewer feedback, protecting the document's purpose, knowing when to stop |
-| **Publication & Maintenance** | Format adaptation, release notes, first-pass translation, alt text, feedback clustering, stale-content detection | Sign-off, translation quality, retirement decisions, reading real feedback |
+| **Publication and Maintenance** | Format adaptation, release notes, first-pass translation, alt text, feedback clustering, stale-content detection | Sign-off, translation quality, retirement decisions, reading real feedback |
 
 Read across any row and you'll notice a pattern: the AI column grows as the task becomes more mechanical, the human column grows as the task becomes more contextual. This is the shape of the division of labor across the whole process. When a task feels mechanical, AI is probably a good fit. When a task feels like it requires knowing something not written down, it probably requires you.
 
