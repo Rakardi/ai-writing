@@ -1,8 +1,8 @@
 # Glossary
 
-**Agent / Agentic AI** — An AI system that pursues a goal across multiple steps, using tools, memory, and decision loops, without requiring human direction at every stage. See: **Agentic AI Workflows for Technical Writers**.
+**Agent / Agentic AI** — An AI system that pursues a goal across multiple steps, using tools, memory, and decision loops, without requiring human direction at every stage.
 
-**Augmentation** — A zone on the AI-involvement spectrum where AI assists and the human leads. See: **The Spectrum: Augmentation ← Hybrid → Replacement**.
+**Augmentation** — A zone on the AI-involvement spectrum where AI assists and the human leads.
 
 **Chunking** — In a RAG pipeline, the process of splitting source content into passages suitable for retrieval. Chunking strategy significantly affects retrieval quality.
 
@@ -22,7 +22,7 @@
 
 **LLM (Large Language Model)** — A general-purpose AI model trained on vast text data to generate human-like text. The most common tool a technical writer encounters day-to-day.
 
-**MCP (Model Context Protocol)** — An emerging open standard for connecting AI models to external tools and data sources. Relevant to the long-term interoperability of agentic systems. **Agentic AI Workflows for Technical Writers**.
+**MCP (Model Context Protocol)** — An emerging open standard for connecting AI models to external tools and data sources. Relevant to the long-term interoperability of agentic systems.
 
 **Multimodal model** — An AI model that handles combinations of text, images, audio, and video.
 
@@ -41,4 +41,3 @@
 **Stylistic drift** — The tendency of AI-generated content to converge on a generic, padded register, erasing brand voice over time.
 
 **Temperature** — A setting that controls the randomness of AI output. Lower temperatures produce more deterministic answers; higher temperatures produce more varied ones.
-
