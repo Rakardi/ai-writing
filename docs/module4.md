@@ -158,7 +158,7 @@ A library of just prompts tends to rot quickly, because a prompt without its con
 
 - **The prompt itself**, in a fenced block so whitespace and structure survive copy-paste.
 - **Attachments and context samples** — the voice sample, the style-guide excerpt, the example output — or pointers to where they live.
-- **Metadata:** author, date created, date last tested, model and version it was tested against, the stage of the writing process it serves (see **AI Across the Technical Writing Process**), and the techniques it uses (see **Prompting Techniques Worth Knowing**).
+- **Metadata:** author, date created, date last tested, model and version it was tested against, the stage of the writing process it serves (see [AI in the Technical Writing Process](module5.md)), and the techniques it uses (see [Prompting Techniques Worth Knowing](#prompting-techniques-worth-knowing)).
 - **An expected-output sample,** so the next user can tell at a glance whether a new run is in the right ballpark.
 - **Known failure modes** — one or two lines on what tends to go wrong and what to check for. This is often the most valuable field and the one teams most often skip.
 
