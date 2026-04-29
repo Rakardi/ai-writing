@@ -36,9 +36,11 @@ Each of the twenty prompts follows the same structure, so you can scan quickly:
 - **What to watch for in the output** — the failure modes this prompt is most susceptible to.
 - **How to adapt** — the knobs most worth turning for your own work.
 
-> 💡 **Try this before you read further.** Pick one stage of your current project — Preparation, Research, anything — and hold a real task in mind as you read the corresponding section. A prompt you read with a real task in view lands differently from a prompt you read in the abstract. You'll notice which details are already right for you and which you'll want to change.
+!!! tip "Try this before you read further"
 
-> ⚠️ **A reminder from Module 1.** Every prompt below asks you to paste something — a brief, a spec, source material, a draft. Before you paste, run the *Before You Paste* checklist. A sanitized input is cheaper than any conversation you'll have after a data leak.
+    Pick one stage of your current project — Preparation, Research, anything — and hold a real task in mind as you read the corresponding section. A prompt you read with a real task in view lands differently from a prompt you read in the abstract. You'll notice which details are already right for you and which you'll want to change.
+
+> ⚠️ Every prompt below asks you to paste something — a brief, a spec, source material, a draft. Before you paste, run the *Before You Paste* checklist. A sanitized input is cheaper than any conversation you'll have after a data leak.
 
 
 ## Preparation
