@@ -16,7 +16,6 @@ By the end of this module, you'll be able to:
 !!! warning ""
     Before introducing AI into any new workflow, confirm it is permitted under your project's AI policy and obtain the appropriate permissions from stakeholders — so as not to expose any sensitive data to the LLM.
 
----
 
 ## AI Across the Technical Writing Process
 
@@ -24,7 +23,6 @@ A useful way to read the sections that follow: for each stage, ask yourself two 
 
 Each stage below has three parts: **What happens** (a short framing of the stage), **How AI can help** (what to ask for and what kind of output to expect), and **Where human judgment is essential** (the parts you won't want to delegate, even when you can). A small table of example prompts follows — treat them as scaffolds to adapt, not recipes to follow.
 
----
 
 ### Stage 1. Preparation
 
@@ -81,7 +79,7 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 *A couple of worked prompts.*
 
 | Task | Example prompt |
-|---|---|
+| --- | --- |
 | Summarize secondary source material for a specific documentation task. | "Summarize the following materials for a technical writer documenting [product feature]: [paste content]. Focus on: what the feature does, who it is for, known edge cases or limitations, and anything a user might misunderstand. Flag any gaps or contradictions in the source material." |
 | Evaluate whether a research task is automation-worthy. | "I need to complete the following research task repeatedly: [describe task]. It involves these steps: [list steps] and these data sources: [list sources]. Assess whether this task is a good candidate for an automated agent workflow by evaluating: how routine and well-defined the steps are, how frequently the task repeats, and what the setup cost vs. time savings trade-off might be. List any additional information I would need to design the workflow." |
 
@@ -112,7 +110,7 @@ Each stage below has three parts: **What happens** (a short framing of the stage
 *A couple of worked prompts.*
 
 | Task | Example prompt |
-|---|---|
+| --- | --- |
 | Generate outline options for a new document. | "I am writing [document type] for [audience] about [topic]. The goal is [goal]. The audience's existing knowledge is [describe]. Propose three different outline structures: one task-oriented, one concept-oriented, and one hybrid. For each, list the top-level headings and a one-line rationale. Note which structure you would recommend and why." |
 | Group a messy list of topics. | "Here are 22 topics I've gathered from research: [paste list]. Group them into a logical outline for a [document type]. Use no more than 5 top-level groups. For each group, suggest a heading in sentence case, starting with an action verb where appropriate. Flag any topics that don't fit, and any groups that look thin enough to merge." |
 
@@ -252,7 +250,7 @@ A short, non-exhaustive cost-of-skipping inventory:
 For quick reference, here is the technical writing process summarized across its six stages, the AI-assistable tasks at each, and the human responsibilities that remain:
 
 | Stage | AI can help with | Human judgment essential for |
-|---|---|---|
+| --- | --- | --- |
 | **Preparation** | Audience personas, stakeholder matrices, scope brainstorms, oversight-gate mapping, revision-plan structures | Choosing the real audience, interpreting vague briefs, reading organizational context |
 | **Research** | Summarizing sources, drafting SME interview questions, extracting claims, clustering feedback, first-pass glossaries | Conducting SME interviews, separating true from plausible, resolving source contradictions |
 | **Organization** | Outline options, topic groupings, TOC drafts, content-type recommendations, sequencing suggestions | Knowing what the reader came for, deciding what to cut, sequencing around invisible dependencies |
