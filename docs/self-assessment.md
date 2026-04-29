@@ -39,5 +39,3 @@ Rate yourself on each item: **Confident** / **Somewhat** / **Not yet**. Anything
 - [ ] I know my organization's position on AI disclosure, or I know where to ask.
 - [ ] I actively watch for bias in AI output (pronouns, cultural assumptions, accessibility, regional variation).
 - [ ] I know what categories of content I must not submit to external AI, and I do not submit them.
-
----
