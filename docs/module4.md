@@ -20,7 +20,6 @@ The importance of prompt engineering can't be overstated. It enables technical w
 - Ensure consistency in style, tone, and voice across various documents.
 - Enhance the user experience by providing precise and helpful information.
 
----
 
 ## The Anatomy of an Effective Prompt
 
@@ -96,7 +95,6 @@ You have a 3000-word document that describes the operation of a solar panel in m
 
 Notice how the components complement each other. The Role sets the voice. The Task names the deliverable. The Context tells the model who it is *really* writing for (not the original audience of the manual, but the non-technical reader you now serve). The Format and Constraints bound the output. Examples — when you have them — tune the style in a way words alone cannot.
 
----
 
 ## Crafting Effective Prompts
 
@@ -130,7 +128,6 @@ The six components above describe the *anatomy* of a prompt. The techniques belo
 
 No single technique is universally best. The judgment is in choosing the one (or the combination) that fits your task, your model, the length of your engagement, and the stakes involved.
 
----
 
 ## When Prompt Engineering Reaches Its Limit
 
@@ -167,7 +164,7 @@ A library of just prompts tends to rot quickly, because a prompt without its con
 There is no single correct taxonomy. The organizing principle you choose shapes how people find prompts, which shapes which prompts actually get reused. Think of it as choosing the primary sort key — you can always add secondary tags.
 
 | Organize by… | Strength | Trade-off |
-|---|---|---|
+| --- | --- | --- |
 | **Stage of the writing process** (Preparation, Research, Organization, Writing, Revision, Publication) | Matches how writers actually work day-to-day; mirrors AI in the Technical Writing Process and Prompt Library | Some prompts serve more than one stage and end up duplicated or miscategorized |
 | **Technique** (zero-shot, few-shot, chain-of-thought, role-based, self-consistency, prompt chaining, meta-prompting) | Great for learning and for deliberate skill-building | Writers searching for "how do I summarize a changelog" don't think in techniques |
 | **Content type** (release note, API reference, tutorial, troubleshooting entry, internal runbook) | Maps directly to deliverables; easy for new joiners to browse | Creates overlap where the same content type spans multiple stages |
