@@ -7,6 +7,7 @@ Through the previous modules, you have worked with AI as a conversational partne
 For technical writers, this matters because a significant portion of documentation work is not single prompts but multi-step pipelines: "every time a new ticket closes, extract the user-visible change, classify it, add it to the release-notes draft, flag breaking changes for engineer review, and notify the team when the draft is ready." A single prompt cannot do this. An agent can.
 
 By the end of this module, you'll be able to:
+
 - Describe what agentic AI is and how it differs from prompt-based AI.
 - Identify the kinds of documentation work that benefit from agentic workflows.
 - Recognize the risks specific to agents — and how to mitigate them.
