@@ -9,6 +9,7 @@ It sounds simple. In practice, it is anything but. The amount of AI involvement 
 This module gives you a framework for making these decisions deliberately—for any task, at any stage, in any context.
 
 By the end of this module, you'll be able to:
+
 - Describe the augmentation–replacement spectrum and place specific documentation tasks on it.
 - Apply a four-question decision framework to any task to determine the appropriate level of AI involvement.
 - Recognize the warning signs that tell you AI has too much control.
