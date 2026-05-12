@@ -125,7 +125,7 @@ Match the technique to the stakes — you don't need all of these on every outpu
 
 AI-readiness includes telling whether AI is actually improving your work — or quietly making it worse in ways that show up weeks later. A few lightweight signals are enough.
 
-- **Time-to-publish.** Has "brief received" to "content published" actually dropped?
+- **Time-to-publish.** Has the measured time from getting a brief to publishing the final piece gone down?
 - **Error-catch rate at review.** A rise may mean AI drafts are introducing new problems; a fall may mean reviewers are skimming because output "looks fine."
 - **Revision count.** Rising revision counts are a warning sign.
 - **Post-publication issues.** User-reported errors, support tickets traceable to documentation, broken examples. Lagging but unambiguous.
