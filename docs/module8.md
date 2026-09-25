@@ -55,6 +55,8 @@ Before committing to build one, five habits separate agents that stay trustworth
 
 An agent earns its place when the work has a specific shape. Before commissioning one, check the task against these five criteria. The more of them it satisfies, the stronger the case.
 
+"Agent" is used broadly here — any system that automates a multi-step task, whether it ends up being a fully autonomous agent or, more often, a supervised workflow with a couple of agentic steps inside it (see **Designing an Agent Well**). These five criteria tell you whether the task is worth automating at all; whether the result is a workflow or a true agent is a separate design choice you make afterward. In fact, the more a task satisfies the third criterion below, the more likely you'll land on a workflow rather than a fully autonomous agent — and that's usually the safer outcome.
+
 **The task repeats on a predictable cycle.** Agents are infrastructure. Like any infrastructure, they carry a build-and-maintain cost. That cost only pays off when the task runs often enough — weekly, every sprint, every release. A task you do once a quarter is almost never worth automating.
 
 **The task is triggered by an event you can detect.** Agents need a reliable signal to start. A sprint moving to Active. A pull request merging. A ticket changing status. If the trigger is "someone emails me," the agent has no way in. If the trigger is "a webhook fires," it does.
@@ -130,7 +132,7 @@ The IDS exhibits all four properties introduced earlier in this module:
 | Memory and state | It maintains a stash across sprints, tracks amendment history, and stores the status of every draft throughout its lifecycle. |
 | Loop and recovery | It re-ingests new information (meeting notes) against existing drafts, reconciles contradictions, and iterates without restarting from scratch. |
 
-A closer look, though: Steps 1, 3, 4, 6, 7, and 8 run in the same fixed order every sprint — that's a **workflow**, not autonomous agency (see **Designing an Agent Well**). The genuinely agentic parts are Step 2 (semantic classification that isn't a fixed rule) and Step 5 (research that decides for itself what to fetch and cite). That split is typical: most production systems billed as "agentic" are supervised workflows with one or two truly autonomous steps embedded in them — which is exactly why the two human gates below matter as much as they do.
+A closer look, though: the pipeline itself — which step follows which — is fixed and runs the same way every sprint; that's the **workflow** backbone (see **Designing an Agent Well**). What's genuinely agentic is what happens *inside* two of those steps: Step 2 classifies by semantic judgment rather than a fixed rule, and Step 5 decides for itself what to research and cite. Even Step 7's reconciliation — a form of memory and recovery — runs inside a sequence that doesn't change; the step is agentic in what it does, not in when or whether it runs. That split is typical: most production systems billed as "agentic" are supervised workflows with one or two truly autonomous steps embedded in them — which is exactly why the two human gates below matter as much as they do.
 
 ### Where Humans Stay in Control
 
@@ -153,7 +155,7 @@ The five risks named earlier in this module each appear in this system. Here is 
 |---|---|---|
 | Silent drift | Classification accuracy degrades as the product evolves and issue descriptions change. | Tested against a held-out set of past sprints before going live; in production, the tech writer's amendments are logged and fed back into the classifier, and a sample of classifications is audited periodically. |
 | Compounding errors | A misclassified issue produces a draft in the wrong section of the portal, reviewed in the wrong context. | The tech writer approval gate at Step 4 catches classification errors before any drafting begins. |
-| Tool misuse | The agent writes to a branch it should not, or calls the ticket API in a way that modifies data. | Tools are risk-tiered: read-only ticket access needs no approval (low risk); Git write access is scoped to the documentation repository only and gated by PR review (medium risk); the agent has no access to production systems or spend at any tier. |
+| Tool misuse | The agent writes to a branch it should not, or calls the ticket API in a way that modifies data. | Tools are risk-tiered: read-only ticket access needs no approval (low risk); Git write access is scoped to the documentation repository only and gated by PR review (medium risk); the agent has no access to production systems or spend at all. |
 | Runaway loops | The meeting-notes ingestion step runs indefinitely on a large transcript. | An explicit maximum processing budget per run; a timeout with a logged warning. |
 | Accountability gap | A published draft contains an error and no one is sure whether it came from the agent or the tech writer. | Every agent-generated sentence carries an inline source citation in the draft, and every tool call the agent makes is logged so its reasoning can be inspected after the fact. The pull request history records every human edit. The published file's version history shows who merged it and when. |
 
