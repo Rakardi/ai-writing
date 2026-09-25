@@ -9,6 +9,7 @@ For technical writers, this matters because a significant portion of documentati
 By the end of this module, you'll be able to:
 
 - Describe what agentic AI is and how it differs from prompt-based AI.
+- Distinguish a fixed workflow from a fully autonomous agent, and design tools, testing, and oversight to match.
 - Identify the kinds of documentation work that benefit from agentic workflows.
 - Recognize the risks specific to agents — and how to mitigate them.
 - Read a real-world agentic workflow design and identify where human judgment is preserved.
@@ -34,9 +35,20 @@ Agentic workflows add five classes of risk that prompt-based work does not have.
 
 1. **Silent drift.** The agent quietly produces worse output over time — model versions change, upstream data changes, prompt regressions accumulate. *Mitigation:* golden-set tests and periodic audits (see **Evaluating AI Outputs**).
 2. **Compounding errors.** An error in step 1 becomes the input to step 2, and so on, with each step amplifying the original mistake. *Mitigation:* human review gates and sanity checks between steps, not only at the end.
-3. **Tool misuse.** The agent calls a tool in a way its designers did not anticipate — writing to a system it should only read, or consuming API quota at unexpected rates. *Mitigation:* scoped permissions; quota alarms; dry-run modes during development.
+3. **Tool misuse.** The agent calls a tool in a way its designers did not anticipate — writing to a system it should only read, or consuming API quota at unexpected rates. *Mitigation:* scoped permissions tiered by risk — read-only tools need no approval, tools that write or publish need a human sign-off matched to how hard the action is to undo; quota alarms; dry-run modes during development.
 4. **Runaway loops.** The agent iterates endlessly on an unreachable goal. *Mitigation:* explicit stopping conditions, maximum step counts, time budgets.
 5. **Accountability gap.** When agent output is wrong, who is responsible? *Mitigation:* every agent output is attributed to a human owner. "The agent did it" is not an answer.
+
+
+## Designing an Agent Well
+
+Before committing to build one, five habits separate agents that stay trustworthy from ones that quietly become a liability.
+
+1. **Start simple.** An agent is not the first tool to reach for. If a single well-crafted prompt, or a short chain of prompts, solves the problem, use that — it costs less, runs faster, and is easier to debug when it misbehaves. Reach for an agent only once you've confirmed the task's steps are genuinely too unpredictable for a fixed sequence to handle.
+2. **Know whether you're building a workflow or an agent.** A **workflow** runs a fixed, predefined sequence of steps every time. An **agent** decides its own next step as it goes, based on what it finds. Plenty of systems marketed as "agentic" — including the worked example later in this module — are mostly workflows with one or two genuinely agentic steps (classification, research) embedded in an otherwise fixed sequence. That's not a weakness. A supervised workflow is easier to test, audit, and trust than a fully autonomous agent, and for most documentation use cases it's the right choice.
+3. **Make the agent's reasoning visible.** Log or surface the plan, the tool calls, and the intermediate results — not just the final output. When something goes wrong, you need to see where the chain broke, not just that it broke.
+4. **Design tools deliberately; don't just wire them up.** A tool the agent calls is an interface, and interfaces deserve the same care as an API you'd hand to another team: clear parameter names, worked examples, explicit statements of what the tool should never be asked to do. Vague or overloaded tools are a common source of the tool-misuse risk above.
+5. **Test in a sandbox before you trust it in production.** Run the agent against a held-out set of representative past inputs — not live data — before it touches anything real. This is where you catch bad classifications and runaway behavior cheaply, before they cost you an actual sprint.
 
 
 ## When To Use an Agent
@@ -118,6 +130,8 @@ The IDS exhibits all four properties introduced earlier in this module:
 | Memory and state | It maintains a stash across sprints, tracks amendment history, and stores the status of every draft throughout its lifecycle. |
 | Loop and recovery | It re-ingests new information (meeting notes) against existing drafts, reconciles contradictions, and iterates without restarting from scratch. |
 
+A closer look, though: Steps 1, 3, 4, 6, 7, and 8 run in the same fixed order every sprint — that's a **workflow**, not autonomous agency (see **Designing an Agent Well**). The genuinely agentic parts are Step 2 (semantic classification that isn't a fixed rule) and Step 5 (research that decides for itself what to fetch and cite). That split is typical: most production systems billed as "agentic" are supervised workflows with one or two truly autonomous steps embedded in them — which is exactly why the two human gates below matter as much as they do.
+
 ### Where Humans Stay in Control
 
 The tech writer is not removed from the workflow — their role shifts. They spend less time on triage and more time on judgment.
@@ -129,7 +143,7 @@ There are two hard gates where nothing proceeds without a human decision:
 
 Between those gates, the agent works. At those gates, the human decides.
 
-Trust is built incrementally. A sensible onboarding path: the system starts in observe-only mode for the first few sprints — reporting what it would do, but not acting. As the tech writer develops confidence in its classifications, it is given progressively more autonomy. High-confidence, routine tasks are eventually handled end-to-end; low-confidence and ambiguous tasks always remain gated.
+Trust is built incrementally, and it starts before the system ever sees a live sprint: the classifier is first tested in a sandbox against a held-out set of past sprints, checking its calls against what a human actually decided at the time. Only once that passes does the system go live — in observe-only mode for the first few sprints, reporting what it would do without acting. As the tech writer develops confidence in its classifications, it is given progressively more autonomy. High-confidence, routine tasks are eventually handled end-to-end; low-confidence and ambiguous tasks always remain gated.
 
 ### The Five Risks, Applied
 
@@ -137,11 +151,11 @@ The five risks named earlier in this module each appear in this system. Here is 
 
 | Risk | How it appears here | Mitigation in this design |
 |---|---|---|
-| Silent drift | Classification accuracy degrades as the product evolves and issue descriptions change. | The tech writer's amendments are logged and fed back into the classifier; a sample of classifications is audited periodically. |
+| Silent drift | Classification accuracy degrades as the product evolves and issue descriptions change. | Tested against a held-out set of past sprints before going live; in production, the tech writer's amendments are logged and fed back into the classifier, and a sample of classifications is audited periodically. |
 | Compounding errors | A misclassified issue produces a draft in the wrong section of the portal, reviewed in the wrong context. | The tech writer approval gate at Step 4 catches classification errors before any drafting begins. |
-| Tool misuse | The agent writes to a branch it should not, or calls the ticket API in a way that modifies data. | The agent has read-only access to the ticket system; Git write access is scoped to the documentation repository only. |
+| Tool misuse | The agent writes to a branch it should not, or calls the ticket API in a way that modifies data. | Tools are risk-tiered: read-only ticket access needs no approval (low risk); Git write access is scoped to the documentation repository only and gated by PR review (medium risk); the agent has no access to production systems or spend at any tier. |
 | Runaway loops | The meeting-notes ingestion step runs indefinitely on a large transcript. | An explicit maximum processing budget per run; a timeout with a logged warning. |
-| Accountability gap | A published draft contains an error and no one is sure whether it came from the agent or the tech writer. | Every agent-generated sentence carries an inline source citation in the draft. The pull request history records every human edit. The published file's version history shows who merged it and when. |
+| Accountability gap | A published draft contains an error and no one is sure whether it came from the agent or the tech writer. | Every agent-generated sentence carries an inline source citation in the draft, and every tool call the agent makes is logged so its reasoning can be inspected after the fact. The pull request history records every human edit. The published file's version history shows who merged it and when. |
 
 ### What This Is Not
 
@@ -151,4 +165,4 @@ For regulated or high-stakes content, the Augmentation zone (see The Spectrum: A
 
 !!! note
 
-    The Intelligent Documentation System is not a product you install. It is a design pattern you implement. The building blocks — a ticket system with an API, a Git repository, a documentation platform, an LLM API, a knowledge search index — are all standard tools. The agentic layer is the orchestration that connects them and the gate design that keeps a human in the loop at the right moments. The pattern is what is transferable; the specific tools will vary by organisation.
+    The Intelligent Documentation System is not a product you install. It is a design pattern you implement. The building blocks — a ticket system with an API, a Git repository, a documentation platform, an LLM API, a knowledge search index — are all standard tools. The agentic layer is the orchestration that connects them, the deliberate design of each tool's interface (see **Designing an Agent Well**), and the gate design that keeps a human in the loop at the right moments. The pattern is what is transferable; the specific tools will vary by organisation.
